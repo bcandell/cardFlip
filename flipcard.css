@@ -1,0 +1,125 @@
+section#cardStackBox {
+    display: flex;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 106px 0 0 50px;
+    gap: 80px;
+}
+#btnForward svg,
+#btnBack svg {
+    width: 25px;
+    height: 21px;
+}
+article#cardMachine {
+    display: flex;
+    width: 517px;
+    height: 415px;
+    align-items: center;
+}
+
+section#cardHolder {
+    position: relative;
+    height: 437px;
+    width: 476px;
+    left: 45px;
+}
+
+.actualCard {
+    box-sizing: content-box;
+    position: absolute;
+    height: 376px;
+    width: 310px;
+    padding: 16px;
+    border: 1px solid #FFFFFF;
+    border-radius: 20px 0;
+    transition: transform 0.4s ease-in-out, z-index 0s 0.4s;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.imageHolder {
+    width: 310px;
+    height: 192px;
+}
+
+.cardImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px 0;
+}
+
+.cardNumber1 {
+    transform: translate(0, -6.5px) rotate(0deg) scale(1);
+}
+
+.cardNumber2 {
+    transform: translate(25px, -5px) rotate(2deg) scale(1);
+}
+
+.cardNumber3 {
+    transform: translate(51px, 3px) rotate(1.65deg) scale(1);
+}
+
+.cardNumber4 {
+    transform: translate(74px, 12px) rotate(2deg) scale(1);
+}
+
+.cardNumberHidden {
+    transform: translate(74px, 12px) rotate(2deg) scale(1);
+    opacity: 0;
+    pointer-events: none;
+}
+aside.cardInfo {
+    max-width: 600px;
+    padding-top: 52px;
+}
+h2.cardInfo_headline {
+    font: 700 48px / 56px Karla, sans-serif;
+}
+div.cardInfo_paragraph p {
+    font: 500 16px / 20px Karla, sans-serif;
+}
+h3.cardHeadline {
+    font: 700 24px / 24px Triront, serif;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px 0;
+    text-transform: uppercase;
+    letter-spacing: normal;
+}
+p.cardTextArea {
+    font: 500 18px / 19px Karla, sans-serif;
+    width: 305px;
+}
+a#btnBack {
+    position: relative;
+    z-index: 999999;
+}
+#btnForward {
+    position: relative;
+    z-index: 99999;
+}
+/* Works for both <button> and <a> controls */
+#btnForward.is-disabled,
+#btnBack.is-disabled,
+#btnForward[disabled],
+#btnBack[disabled] {
+  opacity: 0.4;
+  pointer-events: none; /* stops mouse/touch on anchors */
+  cursor: not-allowed;
+}
+.cm-fit {
+  width: 345px;
+  height: 292px;
+  position: relative;
+  top: 15px;
+}
+.cm-fit #cardMachine {
+  width: 517px;
+  height: 415px;
+  transform-origin: top left;
+  transform: scale(0.6673) !important;
+}
