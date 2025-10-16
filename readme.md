@@ -113,11 +113,10 @@ If you use catalog.js, include:
 
 ---
 
-## 📸 Screenshots
+## 📸 Screenshot
 
-| Desktop | Mobile |
-|----------|---------|
-| ![Desktop Screenshot](docs/screenshot-desktop.png) | ![Mobile Screenshot](docs/screenshot-mobile.png) |
+
+| ! ![Screenshot](cardFlip.gif) |
 
 ---
 
